@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<me>
+    <name>Mikkel</name>
+    <age>123</age>
+    <hobbies>
+        <hobby>Programming</hobby>
+        <hobby>Eating</hobby>
+        <hobby>Sleeping</hobby>
+    </hobbies>
+</me>
+<!-- Det "dårlige" ved XML er, at det er
+ meget tungt at skrive/læse, og meget overhead, derfor store filer.
+ Det kan ikke læses linje for linje, det hele skal parses -->
