@@ -1,0 +1,18 @@
+[project]
+name = "02-python"
+version = "0.0.1"
+description = "Working with environment variables in python"
+authors = [
+    {name = "mikljohsn",email = "114925102+mikljohsn@users.noreply.github.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "python-dotenv (>=1.0.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

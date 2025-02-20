@@ -573,6 +573,4 @@ scripts
 00_course_material/assignments/01a_data_parsing_server_part_1/Node_solution/package-lock.json
 00_course_material/assignments/01a_data_parsing_server_part_1/Node_solution/package.json
 03_Modules/node_esmodules/package.json
-package.json
-package-lock.json
 ..hintrc
