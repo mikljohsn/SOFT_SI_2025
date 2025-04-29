@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 
-// Replace with your Firebase project config:
 const firebaseConfig = {
   apiKey: "AIzaSyAHORqjLHLpY3XJDCC1lJAGQecAIQ7daM4",
   authDomain: "a-auth-14375.firebaseapp.com",
