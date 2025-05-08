@@ -1,0 +1,18 @@
+[project]
+name = "02-python-wiki-page-web-scraping"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mikljohsn",email = "114925102+mikljohsn@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4 (>=4.13.4,<5.0.0)",
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
