@@ -1,13 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import dotenv from "dotenv";
+import "dotenv/config";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAHORqjLHLpY3XJDCC1lJAGQecAIQ7daM4",
-  authDomain: "a-auth-14375.firebaseapp.com",
-  projectId: "a-auth-14375",
-  storageBucket: "a-auth-14375.firebasestorage.app",
-  messagingSenderId: "220032615320",
-  appId: "1:220032615320:web:42cee2702313677cefa1ed"
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
