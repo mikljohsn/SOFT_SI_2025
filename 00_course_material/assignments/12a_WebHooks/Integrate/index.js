@@ -8,18 +8,16 @@ app.post("/webhooks/receive", (req, res) => {
         const { event, data } = req.body;
 
         if (!event || !data) {
-            return res.status(400).json({ error: "Invalid payload" });
+            return res.status(400).send({ error: "Invalid payload" });
         }
         
-
-        // Process the webhook event
         console.log(`Received event: ${event}`);
         console.log("Data:", data);
 
-        res.status(200).json({ message: "Webhook received successfully" });
+        res.status(200).send({ message: "Webhook received successfully" });
     } catch (error) {
         console.error("Error processing webhook:", error);
-        res.status(500).json({ error: "Internal server error" });
+        res.status(500).send({ error: "Internal server error" });
     }
 });
 
@@ -28,5 +26,5 @@ app.post("/webhooks/receive", (req, res) => {
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running on`, PORT);
 });
